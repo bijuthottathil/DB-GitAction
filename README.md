@@ -101,3 +101,26 @@ jobs:
       az ad sp create-for-rbac --name "my-service-principal" --role contributor --scopes /subscriptions/your-subscription-id--sdk-auth![image](https://github.com/user-attachments/assets/102f666f-2fe3-4674-bbed-1524209d6e78)
 
       Generated value is stored in secrets.AZURE_CREDENTIALS
+      SQL Connection string from cloud is added in secrets.AZURE_SQL_CONNECTION_STRING 
+
+
+      #Running Workflow file
+
+      I dont have any table in DB
+
+      ![image](https://github.com/user-attachments/assets/37d61884-0429-422b-82c4-0abde0b3cf0b)
+
+      Ran workflow file
+
+      ![image](https://github.com/user-attachments/assets/31fbd890-5a09-49a8-8a75-a3bd2324053a)
+     
+    ![image](https://github.com/user-attachments/assets/4660512d-81cf-4e3d-89ca-5a7c1832dc49)
+
+    According to git log, sql statements are executed successfully
+
+    Refer VSCode and check DB
+
+    1st script created table structure and 2nd script inserted records mentioned in 2nd script
+
+    ![image](https://github.com/user-attachments/assets/fd80fa91-1bd5-433f-a9e5-f0495b7fd437)
+
