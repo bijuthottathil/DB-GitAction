@@ -1,1 +1,0 @@
-insert into dbo.customer(customerid,customername) values (2,'biRajju')
