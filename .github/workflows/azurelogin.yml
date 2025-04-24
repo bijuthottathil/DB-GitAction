@@ -1,4 +1,4 @@
-name: Azure Login Example
+name: Deploy SQL to Fabric
 
 on:
   push:
@@ -6,17 +6,28 @@ on:
       - main
 
 jobs:
-  azure-login:
+  deploy-sql:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Check out code
+      # Check out the repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Log in to Azure
+      # Log in to Azure using azure/login
+      - name: Azure login
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Run Azure CLI command
+      # Run Azure CLI commands to deploy SQL
+      - name: Deploy SQL script
         run: |
-          az account show
+          az account set --subscription e3fe7a24-7f96-4d9e-bb03-a60836b78bbb 
+          az sql db update \
+            --resource-group rsadfbiju   \
+            --server free-sql-mi-0491604.public.cc9f926e088f.database.windows.net \
+            --name bijudb \
+            --query "EXEC ('$(cat ./sqlscript.sql)')"
+       
+
