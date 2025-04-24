@@ -1,6 +1,12 @@
-CREATE TABLE TestTable (
-    ID INT PRIMARY KEY,
-    Name NVARCHAR(100)
-);
 
-INSERT INTO TestTable (ID, Name) VALUES (1, 'Test Record');
+IF NOT EXISTS (SELECT * 
+               FROM sys.tables 
+               WHERE name = 'customer' 
+                 AND schema_id = SCHEMA_ID('dbo'))
+BEGIN
+    CREATE TABLE dbo.customer (
+        id INT PRIMARY KEY,
+        customername NVARCHAR(100)
+    );
+insert into dbo.customer(customername) values ('biju');
+END;
