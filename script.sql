@@ -5,8 +5,8 @@ IF NOT EXISTS (SELECT *
                  AND schema_id = SCHEMA_ID('dbo'))
 BEGIN
     CREATE TABLE dbo.customer (
-        id INT PRIMARY KEY,
+        id INT ,
         customername NVARCHAR(100)
     );
-insert into dbo.customer(customername) values ('biju');
+insert into dbo.customer values (1,'biju');
 END;
