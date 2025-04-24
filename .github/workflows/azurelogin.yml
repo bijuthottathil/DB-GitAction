@@ -21,4 +21,5 @@ jobs:
           connection-string: ${{ secrets.DATABASE_CONNECTION_STRING }}
           path: '02-insert-employees-data.sql'
           skip-firewall-check: false
+          
   
