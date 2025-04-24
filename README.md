@@ -1,4 +1,6 @@
 # Deploy SQL scripts to an Azure SQL Database using gitactions
+![image](https://github.com/user-attachments/assets/56e23db5-1ac5-49a5-a408-2affa9c2ce4b)
+
 
 In this basic example , I am using Azure Managed SQL instance
 
