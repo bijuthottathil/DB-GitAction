@@ -8,5 +8,5 @@ BEGIN
         id INT ,
         customername NVARCHAR(100)
     );
-insert into dbo.customer values (1,'biju');
+insert into dbo.customer(id,customername) values (1,'biju');
 END;
