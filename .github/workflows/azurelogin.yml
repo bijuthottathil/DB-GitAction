@@ -24,8 +24,7 @@ jobs:
       - name: Deploy SQL script
         run: |
           az account set --subscription e3fe7a24-7f96-4d9e-bb03-a60836b78bbb 
-          az sql db query  \
-            --resource-group rsadfbiju \
+           az sql db query --resource-group rsadfbiju \
             --server free-sql-mi-0491604.cc9f926e088f.database.windows.net  \
             --name bijudb \
             --query "$(cat ./script.sql)"
