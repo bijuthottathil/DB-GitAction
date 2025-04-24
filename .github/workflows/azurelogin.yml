@@ -25,8 +25,8 @@ jobs:
         run: |
           az account set --subscription e3fe7a24-7f96-4d9e-bb03-a60836b78bbb 
           az sql db update \
-            --resource-group rsadfbiju   \
-            --server free-sql-mi-0491604.public.cc9f926e088f.database.windows.net \
+            --resource-group rsadfbiju \
+            --server free-sql-mi-0491604.cc9f926e088f.database.windows.net \
             --name bijudb \
             --set databaseScripts="script.sql>"
 
