@@ -8,5 +8,5 @@ INSERT INTO dbo.Employees (FirstName, LastName, Email,       HireDate,   Salary)
  ('Grace',   'Garcia',    'grace.garcia@example.com',    '2020-10-01',  64000.00),
  ('Hector',  'Lopez',     'hector.lopez@example.com',    '2019-12-12',  71000.00),
  ('Ivy',     'Patel',     'ivy.patel@example.com',       '2021-08-23',  60000.00),
- ('James',   'O\'Neil',   'james.oneil@example.com',     '2018-04-11',  78000.00);
+ ('James',   ''Neil',   'james.oneil@example.com',     '2018-04-11',  78000.00);
 GO
