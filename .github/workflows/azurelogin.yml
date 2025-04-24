@@ -28,5 +28,5 @@ jobs:
             --resource-group rsadfbiju   \
             --server free-sql-mi-0491604.public.cc9f926e088f.database.windows.net \
             --name bijudb \
-            --set databaseScripts="sqlscript.sql>"
+            --set databaseScripts="script.sql>"
 
