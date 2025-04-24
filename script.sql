@@ -1,1 +1,3 @@
-insert into dbo.customer(customerid,customername) values (2,'biRajju') 
+insert into customer(customerid,customername) values (2,'biRajju')
+select * from customer
+
